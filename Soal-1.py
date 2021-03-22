@@ -1,6 +1,6 @@
-import function
 def display_kontak(daftar_kontak):
     for kontak in daftar_kontak:
+        print ("=============")
         print ("Daftar Kontak:")
         print(f"Nama : {kontak['Nama']}")
         print(f"No.Telepon : {kontak['No.Telepon']}")
@@ -36,14 +36,12 @@ while True:
     if Menu == "3":
         break 
     elif Menu == "1":
-        function.display_kontak(daftar_kontak)
+        display_kontak(daftar_kontak)
     elif Menu == "2":
-        kontak = function.new_kontak()
+        kontak = new_kontak()
         daftar_kontak.append(kontak)
         print ("Kontak berhasil ditambahkan")
-    elif Menu !="1,2,3":
+    else:
         print ("Menu Tidak Tersedia")
 
 print("Program Selesai, Sampai jumpa!")
-
-    
